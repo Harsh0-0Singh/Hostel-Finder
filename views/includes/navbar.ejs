@@ -1,0 +1,50 @@
+
+<nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand logo-div" href="#"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link user-option" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link user-option" href="/listings">All Hostels</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link admin-option" href="/booking/admin">My hostels</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link user-option" href="/booking/showStatus">My Applications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link admin-option" href="/listings/new">Add new Hostel</a>
+        </li>
+        <li class="nav-item dropdown filter-div user-option">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Filters
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/listings/Incprice">increasing price</a></li>
+            <li><a class="dropdown-item" href="/listings/Decprice">Decreasing price</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="right">
+        <% if(!currUser){ %>
+          <li class="nav-item left">
+            <a class="nav-link" href="/signup">SignUp</a>
+          </li>
+          <li class="nav-item left">
+            <a class="nav-link" href="/login">Login</a>
+          </li>
+          <% } %>
+          <% if(currUser) {%>
+            <a class="nav-link left" href="/logout">Logout</a>
+            <% } %>
+      </ul>
+    </div>
+  </div>
+</nav>

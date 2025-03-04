@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+:root{
+  --blue:  #002b45;
+}
+.container{
+  flex: 1;
+}
+/* navbar */
+nav{
+ padding: 0px !important;
+}
+.navbar-collapse{
+display: flex;
+justify-content: space-between;
+}
+.right{
+ display: flex; 
+ list-style: none;
+ gap: 10px;
+}
+.container-fluid{
+  padding: 15px;
+  /* background-image: linear-gradient(to right, #221f92, #222b9e, #2237aa, #2243b5, #214ec1, #1061cf, #0074dc, #0086e8, #00a2f2, #00baf1, #00d0e9, #4de4e0); */
+  /* background-image: linear-gradient(to left, #000c46, #000e58, #000f6b, #000e7d, #000a90, #000a90, #000a90, #000a90, #000e7d, #000f6b, #000e58, #000c46); */
+  background-color: var(--blue);
+}
+
+.fa-home {
+  color: red !;
+  font-size: 2rem;
+}
+.nav-link {
+  font-weight: 600 !important;
+  color: white !important;
+}
+
+/* footer */
+.f-info-links a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.f-info-links:hover {
+  text-decoration: underline;
+}
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.f-info-socials {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+.f-info-socials i {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+.f-info {
+  height: 8rem;
+  text-align: center;
+  display: flex;
+  /* background-image: linear-gradient(to right, #221f92, #222b9e, #2237aa, #2243b5, #214ec1, #1061cf, #0074dc, #0086e8, #00a2f2, #00baf1, #00d0e9, #4de4e0);   */
+  /* background-image: linear-gradient(to left, #000c46, #000e58, #000f6b, #000e7d, #000a90, #000a90, #000a90, #000a90, #000e7d, #000f6b, #000e58, #000c46); */
+  background-color: var(--blue);
+  color: white;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+}
+
+/* cards */
+.listing-card{
+  background-color: #ffffff00;
+  border: none !important; 
+  margin-bottom: 2rem;
+
+}
+.card-img-top{
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+.card-body{
+  padding: 0 !important;
+}
+.card-text p{
+  font-weight: 400 !important;
+}
+.listing-link{
+  text-decoration: none;
+  background-color: #ffffff00;
+}
+
+/* card effect */
+ .card-img-overlay{
+  opacity: 0;
+ }
+ .card-img-overlay:hover{
+   opacity: 0.2;
+   background-color: white;
+ }
+
+ /* new page */
+
+ .add-btn{
+  background-color: red !important;
+  border: none!important;
+ }
+
+ /* edit page */
+
+ .edit-btn{
+  color: white;
+  background-color: var(--blue) !important;
+  border: none!important;
+ }
+
+ /* show page */
+ .show-img{
+  height: 50vh;
+ }
+ .btns{
+  display: flex;
+ }
+
+/* Map */
+#map{
+  height: 400px;
+  width: 80vh ;
+}
+
+/* homepage */
+
+.hero-img{
+  display: grid;
+  place-items: center;
+  height: 40vh;
+  border-radius: 8px;
+  background-image:url(../img/computer-desk-room-with-interior-design-window.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.search-bar{
+  border-radius: 6px;
+  padding: 20px;
+  background-color: white;
+  width: 400px;
+}
+.status-select{
+  border: 2px solid var(--blue) !important;
+  padding: 5px;
+}
+.team-img{
+  /* width: 400px !important; */
+  height: 300px !important;
+}
+
+/* show admin page */
+ .application-div{
+border: 2px solid var(--blue) !important; 
+box-shadow: 3px 3px 9px var(--blue) !important;
+background-image: linear-gradient(to right top, #05193730, #004d7a34, #0087933a, #00a3623b, #a6eb1241) !important;
+padding: 20px;
+}
+.transparent{
+  background-color: transparent !important;
+}
+
+/* boilerplate-body */
+.bg-img-container{
+  background-image: url(../img/05.jpg) !important;
+  /* background-position: center !important; */
+  background-repeat: repeat !important;
+  background-size: 400px !important;
+  opacity: 1;
+}
+
+  .logo-div {
+    width: 88px;
+    height: 88px;
+    margin: -20px;
+    background-image: url(../img/logo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

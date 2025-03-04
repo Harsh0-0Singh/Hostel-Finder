@@ -1,0 +1,54 @@
+<% layout("/layouts/boilerplate") %>
+<style>
+    .filter-div{
+        display: none;
+    }
+</style>
+    <div class="row mt-3">
+        <h1 class="col-6 offset-3" style="text-align: center;">SignUp on Hostel Finder</h1>
+        <div class="col-6 offset-3">
+            <form action="/signup" method="POST" class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input name="username" id="username" type="text" class="form-control" required>
+                    <div class="valid-feedback">
+                        Title looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Title should be valid
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input name="email" id="email" type="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input name="password" id="password" type="password" class="form-control" required>
+                </div>
+                <!-- <div class="mb-3">
+                    <label for="Confirmpassword" class="form-label">Confirm Password</label>
+                    <input name="Confirmpassword" id="Confirmpassword" type="Confirmpassword" class="form-control" required>
+                </div> -->
+                <div class="mb-3">
+                    <label for="role" class="form-label">Role</label>
+                    <select name="role" id="role" class="form-control">
+                        <option value="Role">Select Role</option>
+                        <option value="student">Student</option>
+                        <option value="owner">Hostel Owner</option>
+                    </select>
+                </div>
+
+                <!-- <div class="mb-3">
+                    <label for="" class="form-label">Role</label>
+                    <select class="form-control" required>
+                        <option value="" selected>Select role</option>
+                        <option value="Student">Student</option>
+                        <option value="HostelOwner">Hostel Owner</option>
+                    </select>
+                </div> -->
+                <button style="background-color: #002b45;" class="btn btn-success form-control">SignUp</button>
+                <br><br>
+            </form>
+        </div>
+    </div>
